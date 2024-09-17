@@ -50,7 +50,6 @@
 	<!-- Navigation will be loaded here -->
     <div id="nav-placeholder"></div>
 
-	
 	<!-- Start Home Section -->
 	<div class="home-3 home-section">
 		<div id="particles-js"></div>
@@ -631,17 +630,16 @@
 		<i class="fas fa-chevron-up"></i>
 	</div>
 	<!-- End Go Top Section -->
-	
-	<!-- jQuery navigation mene -->
-    <script>
-        // Fetch the navigation HTML and insert it into the nav-placeholder
-        fetch('nav.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading nav:', error));
-    </script>
+
+	<script>
+	// Fetch the navigation HTML and insert it into the nav-placeholder
+	fetch('nav.html')
+		.then(response => response.text())
+		.then(data => {
+			document.getElementById('nav-placeholder').innerHTML = data;
+		})
+		.catch(error => console.error('Error loading nav:', error));
+	</script>
 	<!-- jQuery Min JS -->
 	<script src="assets/js/jquery.min.js"></script>
 	<!-- Popper Min JS -->
@@ -672,6 +670,16 @@
 	<script src="assets/js/wow.min.js"></script>
 	<!-- Main JS -->
 	<script src="assets/js/main.js"></script>
+	<!-- jQuery navigation mene -->
+	<script>
+		// Fetch the navigation HTML and insert it into the nav-placeholder
+		fetch('nav.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('nav-placeholder').innerHTML = data;
+			})
+			.catch(error => console.error('Error loading nav:', error));
+	</script>
 	
 </body>
 

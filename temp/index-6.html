@@ -1039,6 +1039,15 @@
 	</div>
 	<!-- End Go Top Section -->
 	
+	<script>
+	// Fetch the navigation HTML and insert it into the nav-placeholder
+	fetch('nav.html')
+		.then(response => response.text())
+		.then(data => {
+			document.getElementById('nav-placeholder').innerHTML = data;
+		})
+		.catch(error => console.error('Error loading nav:', error));
+	</script>
 	<!-- jQuery Min JS -->
 	<script src="assets/js/jquery.min.js"></script>
 	<!-- Popper Min JS -->
