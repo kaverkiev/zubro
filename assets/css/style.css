@@ -2245,10 +2245,21 @@ p:last-child {
 	margin-top: 30px;
 }
 
-.single-services-three-item .services-icon {
+.single-services-three-item .services-main-icon {
 	position: relative;
 	width: 80px;
 	height: 80px;
+    display: inline-block;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin-bottom: 25px;
+    will-change: transform;
+}
+
+.single-services-three-item .services-main-icon {
+	position: relative;
+	width: 50px;
+	height: 50px;
     display: inline-block;
     -webkit-transition: 0.5s;
     transition: 0.5s;
