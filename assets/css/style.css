@@ -2084,22 +2084,17 @@ p:last-child {
 }
 
 .services-icon {
-    display: flex;  /* Ensures alignment */
-    justify-content: center;
-    align-items: center;
-    width: 80px;  /* Set fixed width */
-    height: 80px; /* Set fixed height */
-    margin-bottom: 15px;
+    display: inline-block;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
+    margin-bottom: 15px;
     will-change: transform;
 }
 
 .services-icon i {
-    width: 100%; /* Ensures the icon scales within the .services-icon container */
-    height: 100%;
-    max-width: 80px;  /* Prevents oversized icons */
-    max-height: 80px;
-    object-fit: contain; /* Ensures the icon fits without distortion */
+    color: #ff561d;
+	font-size: 50px;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
